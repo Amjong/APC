@@ -1,0 +1,4 @@
+[
+    //실행
+    { "key": "ctrl+alt+c", "command": "workbench.action.tasks.test" }
+]
