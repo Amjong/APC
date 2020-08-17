@@ -3,12 +3,12 @@
 	"runner": "terminal",
 	"type": "shell",
 	"echoCommand": true,
-	"presentation": {		
-		"reveal": "always",
+	"presentation": {
+		"reveal": "always"
 	},
 	"tasks": [
 		//C++ 컴파일
-		{			
+		{
 			"label": "save and compile for C++",
 			"command": "g++",
 			"args": [
@@ -17,9 +17,6 @@
 				"${fileDirname}/${fileBasenameNoExtension}"
 			],
 			"group": "build",
-			"options": {
-				"cwd": "C:\\MinGW\\bin"
-			},
 			"problemMatcher": {
 				"fileLocation": [
 					"relative",
@@ -36,7 +33,6 @@
 					"message": 5
 				}
 			}
-			
 		},
 		//C 컴파일
 		{
@@ -48,10 +44,8 @@
 				"${fileDirname}/${fileBasenameNoExtension}"
 			],
 			"group": "build",
-
 			//컴파일시 에러를 편집기에 반영
 			//참고 : https://code.visualstudio.com/docs/editor/tasks#_defining-a-problem-matcher
-
 			"problemMatcher": {
 				"fileLocation": [
 					"relative",
@@ -65,19 +59,19 @@
 					"line": 2,
 					"column": 3,
 					"severity": 4,
-					"message": 5 
+					"message": 5
 				}
 			}
 		},
-
 		// 바이너리 실행(Windows)
 		{
 			"label": "execute",
 			"command": "cmd",
 			"group": "test",
 			"args": [
-				"/C", "${fileDirname}\\${fileBasenameNoExtension}"
+				"/C",
+				"${fileDirname}/${fileBasenameNoExtension}"
 			]
-		}		
+		}
 	]
 }
